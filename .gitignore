@@ -1,0 +1,4 @@
+﻿Build/*
+core/*
+!Build/Run Cmake Here
+!core/Add GDWeave DLLS Here
