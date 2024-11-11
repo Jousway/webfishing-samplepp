@@ -1,7 +1,6 @@
-# CSharp Wrapper
+# CSharp Wrapper Project.
 project("${Username}.${ProjectName}" VERSION ${Version} LANGUAGES CSharp)
 
-# CS Wrapper
 configure_file("Wrapper.in.cs" "${PROJECT_BINARY_DIR}/Wrapper.cs")
 add_library("${Username}.${ProjectName}" SHARED "${PROJECT_BINARY_DIR}/Wrapper.cs")
 set_target_properties("${Username}.${ProjectName}" PROPERTIES

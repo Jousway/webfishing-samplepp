@@ -36,8 +36,6 @@ namespace ProjectUser::ProjectName {
 			MethodInfo^ logMethod = Vars::logger->GetType()->GetMethod("Information", gcnew array<Type^> { String::typeid });
 			logMethod->Invoke(Vars::logger, gcnew array<Object^>{ Str });
 		}
-	}
-	namespace Logger {
 
 		static void Fatal(String^ Str)
 		{
