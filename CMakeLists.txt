@@ -15,8 +15,7 @@ project ("${Username}.${ProjectName}.Main" VERSION ${Version} LANGUAGES CXX)
 set(MainDir ${PROJECT_SOURCE_DIR})
 set(BuildDir ${PROJECT_BINARY_DIR})
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${MainDir}/Output/Debug/")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${MainDir}/Output/")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${MainDir}/Output/Other/")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG "${MainDir}/Output/debug/")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE "${MainDir}/Output/release/")
 
 add_subdirectory(Source)

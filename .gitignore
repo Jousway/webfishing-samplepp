@@ -3,5 +3,3 @@ core/*
 !Build/Run Cmake Here
 !core/Add GDWeave DLLS Here
 Output
-Source/MainRust/Cargo.lock
-Source/MainRust/Cargo.toml

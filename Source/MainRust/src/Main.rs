@@ -1,9 +1,17 @@
-#[no_mangle]
-pub extern "C" fn RunMod(ptr: i64) {
+mod CompatLoad;
 
+impl CompatLoad::Config {
+    const test: bool = false; 
 }
 
-#[no_mangle]
-pub extern "C" fn StopMod() {
-    
+unsafe fn main()
+{
+    let conf = &mut CompatLoad::Config::default();
+
+    CompatLoad::ReadConfig(conf);
+}
+
+fn stop()
+{
+
 }
